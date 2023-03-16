@@ -1,10 +1,12 @@
 import pypandoc
+from utility.document_format import DocumentFormat
 
 
 class DocumentConverter:
 
     def __init__(self):
-        pass
+        self.__input_format = DocumentFormat.DOCX
+        self.__output_format = DocumentFormat.EPUB
 
     @property
     def input(self):
@@ -19,7 +21,7 @@ class DocumentConverter:
         return self.__input_format
 
     @input_format.setter
-    def input_format(self, value):
+    def input_format(self, value: DocumentFormat):
         self.__input_format = value
 
     @property
@@ -35,9 +37,9 @@ class DocumentConverter:
         return self.__output_format
 
     @output_format.setter
-    def output_format(self, value):
+    def output_format(self, value: DocumentFormat):
         self.__output_format = value
 
     def start(self):
-        pypandoc.convert_file(self.__input, format=self.__input_format,
-                              outputfile=self.__output, to=self.__output_format)
+        pypandoc.convert_file(self.input, format=self.input_format.value,
+                              outputfile=self.output, to=self.output_format.value)
