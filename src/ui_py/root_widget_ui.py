@@ -114,14 +114,14 @@ class Ui_root_widget(object):
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_4)
 
-        self.convert_btn = QPushButton(self.output_doc_sec)
+
+        self.verticalLayout_3.addWidget(self.output_doc_sec)
+
+        self.convert_btn = QPushButton(root_widget)
         self.convert_btn.setObjectName(u"convert_btn")
         self.convert_btn.setStyleSheet(u"")
 
-        self.verticalLayout_2.addWidget(self.convert_btn)
-
-
-        self.verticalLayout_3.addWidget(self.output_doc_sec)
+        self.verticalLayout_3.addWidget(self.convert_btn)
 
 
         self.retranslateUi(root_widget)

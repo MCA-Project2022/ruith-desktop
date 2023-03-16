@@ -141,17 +141,17 @@
         </item>
        </layout>
       </item>
-      <item>
-       <widget class="QPushButton" name="convert_btn">
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
-        <property name="text">
-         <string>Convert</string>
-        </property>
-       </widget>
-      </item>
      </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="convert_btn">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Convert</string>
+     </property>
     </widget>
    </item>
   </layout>
