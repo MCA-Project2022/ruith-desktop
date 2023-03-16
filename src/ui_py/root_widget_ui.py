@@ -40,6 +40,8 @@ class Ui_root_widget(object):
         self.horizontalLayout.addWidget(self.input_format_lbl)
 
         self.input_doc_format_cb = QComboBox(self.input_doc_sec)
+        self.input_doc_format_cb.addItem("")
+        self.input_doc_format_cb.addItem("")
         self.input_doc_format_cb.setObjectName(u"input_doc_format_cb")
 
         self.horizontalLayout.addWidget(self.input_doc_format_cb)
@@ -83,6 +85,8 @@ class Ui_root_widget(object):
         self.horizontalLayout_3.addWidget(self.output_format_lbl)
 
         self.output_doc_format_cb = QComboBox(self.output_doc_sec)
+        self.output_doc_format_cb.addItem("")
+        self.output_doc_format_cb.addItem("")
         self.output_doc_format_cb.setObjectName(u"output_doc_format_cb")
 
         self.horizontalLayout_3.addWidget(self.output_doc_format_cb)
@@ -122,6 +126,9 @@ class Ui_root_widget(object):
 
         self.retranslateUi(root_widget)
 
+        self.output_doc_format_cb.setCurrentIndex(1)
+
+
         QMetaObject.connectSlotsByName(root_widget)
     # setupUi
 
@@ -129,11 +136,17 @@ class Ui_root_widget(object):
         root_widget.setWindowTitle(QCoreApplication.translate("root_widget", u"Form", None))
         self.input_doc_sec.setTitle(QCoreApplication.translate("root_widget", u"Input Document", None))
         self.input_format_lbl.setText(QCoreApplication.translate("root_widget", u"Format", None))
+        self.input_doc_format_cb.setItemText(0, QCoreApplication.translate("root_widget", u"Microsoft Word(docx)", None))
+        self.input_doc_format_cb.setItemText(1, QCoreApplication.translate("root_widget", u"Electronic Publication(epub)", None))
+
         self.input_loc_lbl.setText(QCoreApplication.translate("root_widget", u"Location", None))
         self.input_doc_browse_btn.setText(QCoreApplication.translate("root_widget", u"Browse...", None))
         self.input_doc_lbl.setText("")
         self.output_doc_sec.setTitle(QCoreApplication.translate("root_widget", u"Output Document", None))
         self.output_format_lbl.setText(QCoreApplication.translate("root_widget", u"Format", None))
+        self.output_doc_format_cb.setItemText(0, QCoreApplication.translate("root_widget", u"Microsoft Word(docx)", None))
+        self.output_doc_format_cb.setItemText(1, QCoreApplication.translate("root_widget", u"Electronic Publication(epub)", None))
+
         self.output_loc_lbl.setText(QCoreApplication.translate("root_widget", u"Location", None))
         self.output_doc_browse_btn.setText(QCoreApplication.translate("root_widget", u"Browse...", None))
         self.output_doc_lbl.setText("")
