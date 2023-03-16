@@ -36,7 +36,18 @@
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="input_doc_format_cb"/>
+         <widget class="QComboBox" name="input_doc_format_cb">
+          <item>
+           <property name="text">
+            <string>Microsoft Word(docx)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Electronic Publication(epub)</string>
+           </property>
+          </item>
+         </widget>
         </item>
        </layout>
       </item>
@@ -87,7 +98,21 @@
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="output_doc_format_cb"/>
+         <widget class="QComboBox" name="output_doc_format_cb">
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>Microsoft Word(docx)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Electronic Publication(epub)</string>
+           </property>
+          </item>
+         </widget>
         </item>
        </layout>
       </item>
