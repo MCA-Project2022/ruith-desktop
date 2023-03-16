@@ -6,16 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>697</width>
-    <height>483</height>
+    <width>508</width>
+    <height>380</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">
    <item>
     <widget class="QGroupBox" name="input_doc_sec">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <property name="title">
       <string>Input Document</string>
      </property>
@@ -64,6 +70,9 @@
    </item>
    <item>
     <widget class="QGroupBox" name="output_doc_sec">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <property name="title">
       <string>Output Document</string>
      </property>
@@ -108,7 +117,10 @@
        </layout>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="convert_btn">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
         <property name="text">
          <string>Convert</string>
         </property>

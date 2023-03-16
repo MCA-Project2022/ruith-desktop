@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'root_widget.ui'
+## Form generated from reading UI file 'form.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.2
 ##
@@ -23,11 +23,13 @@ class Ui_root_widget(object):
     def setupUi(self, root_widget):
         if not root_widget.objectName():
             root_widget.setObjectName(u"root_widget")
-        root_widget.resize(697, 483)
+        root_widget.resize(508, 380)
+        root_widget.setStyleSheet(u"")
         self.verticalLayout_3 = QVBoxLayout(root_widget)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.input_doc_sec = QGroupBox(root_widget)
         self.input_doc_sec.setObjectName(u"input_doc_sec")
+        self.input_doc_sec.setStyleSheet(u"")
         self.verticalLayout = QVBoxLayout(self.input_doc_sec)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.horizontalLayout = QHBoxLayout()
@@ -70,6 +72,7 @@ class Ui_root_widget(object):
 
         self.output_doc_sec = QGroupBox(root_widget)
         self.output_doc_sec.setObjectName(u"output_doc_sec")
+        self.output_doc_sec.setStyleSheet(u"")
         self.verticalLayout_2 = QVBoxLayout(self.output_doc_sec)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.horizontalLayout_3 = QHBoxLayout()
@@ -107,10 +110,11 @@ class Ui_root_widget(object):
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_4)
 
-        self.pushButton_2 = QPushButton(self.output_doc_sec)
-        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.convert_btn = QPushButton(self.output_doc_sec)
+        self.convert_btn.setObjectName(u"convert_btn")
+        self.convert_btn.setStyleSheet(u"")
 
-        self.verticalLayout_2.addWidget(self.pushButton_2)
+        self.verticalLayout_2.addWidget(self.convert_btn)
 
 
         self.verticalLayout_3.addWidget(self.output_doc_sec)
@@ -133,6 +137,6 @@ class Ui_root_widget(object):
         self.output_loc_lbl.setText(QCoreApplication.translate("root_widget", u"Location", None))
         self.output_doc_browse_btn.setText(QCoreApplication.translate("root_widget", u"Browse...", None))
         self.output_doc_lbl.setText("")
-        self.pushButton_2.setText(QCoreApplication.translate("root_widget", u"Convert", None))
+        self.convert_btn.setText(QCoreApplication.translate("root_widget", u"Convert", None))
     # retranslateUi
 

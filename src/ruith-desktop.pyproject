@@ -1,4 +1,5 @@
 {
     "files": ["main.py","ui/root_widget.ui","ui_py/main_window.py","ui_py/root_widget.py","ui_py/root_widget_ui.py",
-    "ui_py/ruith_desktop","utility/document_format.py"]
+    "ui_py/ruith_desktop","utility/document_format.py","ui/root_widget/style/dark.qss","ui/root_widget/style/light.qss",
+    "ui/root_widget/form.ui","ui_py/app.py"]
 }
