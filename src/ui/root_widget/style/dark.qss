@@ -5,8 +5,15 @@ QGroupBox{
     margin-top: 8.5px;
 }
 
-QGroupBox::title {
+QGroupBox::title{
     subcontrol-origin: margin;
     left: 20px;
     padding: 0px 7px 0px 7px;
+}
+
+#input_doc_lbl{
+    border: 2px dotted #aaaaaa;
+}
+#output_doc_lbl{
+    border: 2px dotted #aaaaaa;
 }
