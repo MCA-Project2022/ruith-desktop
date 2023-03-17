@@ -3,6 +3,7 @@ from pathlib import Path
 import tarfile
 import zipfile
 import os
+import sys
 
 PANDOC_VERSION = '3.1.1'
 
@@ -17,7 +18,7 @@ PANDOC_URLS = {
 }
 
 APPDATA_DIR = Path.joinpath(Path.home(), '.config', 'RuithDesktop') if not platform.system() == 'Windows' \
-    else Path.joinpath(
+    else Path(
     os.path.expandvars(r'%LOCALAPPDATA%\RuithDesktop')
 )
 
@@ -27,6 +28,9 @@ PANDOC_ARCHIVE_FILE_PATH = Path.joinpath(APPDATA_DIR, (
 
 PANDOC_PATH = Path.joinpath(APPDATA_DIR, f'pandoc-{PANDOC_VERSION}',
                             'bin', 'pandoc')
+if(platform.system() == 'Windows'):
+    PANDOC_PATH = Path.joinpath(APPDATA_DIR, f'pandoc-{PANDOC_VERSION}',
+                                'pandoc.exe')
 
 
 def get_pandoc_url():
@@ -49,10 +53,11 @@ def extract_pandoc():
         zip.extractall(APPDATA_DIR)
 
 
-def set_pypandoc_pandoc_var():
-    os.environ.setdefault('PYPANDOC_PANDOC', str(PANDOC_PATH))
+def add_pandoc_to_path():
+    print(str(PANDOC_PATH))
+    sys.path.insert(0, str(PANDOC_PATH))
 
 
 def setup_pandoc():
     extract_pandoc()
-    set_pypandoc_pandoc_var()
+    add_pandoc_to_path()

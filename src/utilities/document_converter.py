@@ -1,9 +1,9 @@
 import pypandoc
 from utilities.document_format import DocumentFormat
-from PySide6.QtCore import Signal, QObject
+from PySide6.QtCore import Signal, QThread
 
 
-class DocumentConverter(QObject):
+class DocumentConverter(QThread):
     succeeded = Signal()
     failed = Signal()
 
@@ -44,7 +44,7 @@ class DocumentConverter(QObject):
     def output_format(self, value: DocumentFormat):
         self.__output_format = value
 
-    def start(self):
+    def run(self):
         try:
             pypandoc.convert_file(self.input, format=self.input_format.value,
                                   outputfile=self.output, to=self.output_format.value)

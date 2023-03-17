@@ -3,7 +3,7 @@ from ui_py.main_window import MainWindow
 from ui_py.splash import SplashScreen
 import darkdetect
 import os
-from etc.pandoc_helper import PANDOC_PATH, set_pypandoc_pandoc_var
+from etc.pandoc_helper import PANDOC_PATH, add_pandoc_to_path
 
 
 class RuithDesktop:
@@ -24,7 +24,7 @@ class RuithDesktop:
 
     def start(self):
         if os.path.exists(PANDOC_PATH):
-            set_pypandoc_pandoc_var()
+            add_pandoc_to_path()
             self.__main_window.show()
         else:
             self.splash_sc.show()
