@@ -2,5 +2,7 @@
     <qresource prefix="/images"/>
     <qresource prefix="/">
         <file>assets/images/eye.png</file>
+        <file>assets/styles/dark.qss</file>
+        <file>assets/styles/light.qss</file>
     </qresource>
 </RCC>

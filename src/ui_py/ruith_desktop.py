@@ -1,10 +1,11 @@
 from PySide6.QtWidgets import QApplication
+from PySide6.QtCore import QFile,QIODevice,QTextStream
 from ui_py.main_window import MainWindow
 from ui_py.splash import SplashScreen
 import darkdetect
 import os
 from etc.pandoc_helper import PANDOC_PATH, add_pandoc_to_path
-
+import generated_py.resource_rc
 
 class RuithDesktop:
     def __init__(self):
@@ -19,8 +20,9 @@ class RuithDesktop:
             style = 'dark'
         else:
             style = 'light'
-        with open(f'src/ui/root_widget/style/{style}.qss') as style_file:
-            self.__qapp.setStyleSheet(style_file.read())
+        stream=QFile(f":/assets/styles/{style}.qss")
+        stream.open(QIODevice.ReadOnly)
+        self.__qapp.setStyleSheet(QTextStream(stream).readAll())
 
     def start(self):
         if os.path.exists(PANDOC_PATH):
