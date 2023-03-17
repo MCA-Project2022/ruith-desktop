@@ -1,5 +1,5 @@
 import pypandoc
-from utility.document_format import DocumentFormat
+from utilities.document_format import DocumentFormat
 
 
 class DocumentConverter:

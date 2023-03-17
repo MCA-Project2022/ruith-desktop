@@ -1,7 +1,7 @@
 from generated_py.ui_root_widget import Ui_root_widget
 from PySide6.QtWidgets import QWidget, QFileDialog
-from utility.document_converter import DocumentConverter
-from utility.document_format import DocumentFormat
+from utilities.document_converter import DocumentConverter
+from utilities.document_format import DocumentFormat
 from pathlib import Path
 
 

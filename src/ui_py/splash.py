@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QWidget
 from PySide6.QtCore import Qt, Signal
 from generated_py.ui_splash import Ui_splash_screen
-from utility.downloader import Downloader
+from utilities.downloader import Downloader
 from etc.pandoc_helper import get_pandoc_url, get_pandoc_archive_file_path, setup_pandoc
 
 
