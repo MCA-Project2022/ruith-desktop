@@ -1,5 +1,5 @@
 from generated_py.ui_root_widget import Ui_root_widget
-from PySide6.QtWidgets import QWidget, QFileDialog
+from PySide6.QtWidgets import QWidget, QFileDialog, QMessageBox
 from utilities.document_converter import DocumentConverter
 from utilities.document_format import DocumentFormat
 from pathlib import Path
@@ -21,6 +21,8 @@ class RootWidget(QWidget, Ui_root_widget):
         self.output_doc_format_cb.currentIndexChanged.connect(
             self.set_output_file_format)
         self.convert_btn.clicked.connect(self.doc_converter.start)
+        self.doc_converter.succeeded.connect(self.show_success_msg)
+        self.doc_converter.failed.connect(self.show_failure_msg)
 
     def set_input_file_format(self):
         self.doc_converter.input_format = DocumentFormat.int_to_DocumentFormat(
@@ -45,3 +47,11 @@ class RootWidget(QWidget, Ui_root_widget):
             f"Document ( *.{self.doc_converter.output_format.value})"
         )[0]+'.'+self.doc_converter.output_format.value
         self.output_doc_lbl.setText(Path(self.doc_converter.output).name)
+
+    def show_success_msg(self):
+        QMessageBox.information(
+            self, 'Success', f'''Document was successfully from {self.doc_converter.input_format.value} to {self.doc_converter.output_format.value}''')
+
+    def show_failure_msg(self):
+        QMessageBox.information(
+            self, 'Success', 'Something went wrong please try again.')
