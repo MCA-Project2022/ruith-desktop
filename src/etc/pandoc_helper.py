@@ -55,7 +55,8 @@ def extract_pandoc():
 
 def add_pandoc_to_path():
     print(str(PANDOC_PATH))
-    sys.path.insert(0, str(PANDOC_PATH))
+    os.environ.setdefault('PYPANDOC_PANDOC',str(PANDOC_PATH))
+    print(os.environ['PYPANDOC_PANDOC'])
 
 
 def setup_pandoc():
