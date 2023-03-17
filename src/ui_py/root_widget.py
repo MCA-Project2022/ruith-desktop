@@ -1,4 +1,4 @@
-from ui_py.root_widget_ui import Ui_root_widget
+from generated_py.ui_root_widget import Ui_root_widget
 from PySide6.QtWidgets import QWidget, QFileDialog
 from utility.document_converter import DocumentConverter
 from utility.document_format import DocumentFormat
