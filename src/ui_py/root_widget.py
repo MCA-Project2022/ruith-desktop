@@ -53,7 +53,7 @@ class RootWidget(QWidget, Ui_root_widget):
     def show_success_msg(self):
         self.loading_widget.hide()
         QMessageBox.information(
-            self, 'Success', f'''Document was successfully from {self.doc_converter.input_format.value} to {self.doc_converter.output_format.value}''')
+            self, 'Success', f'''Document was successfully converted from {self.doc_converter.input_format.value} to {self.doc_converter.output_format.value}''')
 
     def show_failure_msg(self):
         self.loading_widget.hide()
