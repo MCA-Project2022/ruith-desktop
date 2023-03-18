@@ -76,6 +76,10 @@ class Ui_splash_screen(object):
 
         self.label = QLabel(splash_screen)
         self.label.setObjectName(u"label")
+        font1 = QFont()
+        font1.setPointSize(11)
+        font1.setItalic(True)
+        self.label.setFont(font1)
         self.label.setStyleSheet(u"QLabel{\n"
                                  "color:#633936;\n"
                                  "font-style:italic;\n"
@@ -121,9 +125,33 @@ class Ui_splash_screen(object):
     def retranslateUi(self, splash_screen):
         splash_screen.setWindowTitle(
             QCoreApplication.translate("splash_screen", u"Form", None))
+# if QT_CONFIG(accessibility)
+        self.icon_lbl.setAccessibleName(QCoreApplication.translate(
+            "splash_screen", u"<html><head/><body><p>an eye icon</p></body></html>", None))
+#endif // QT_CONFIG(accessibility)
+# if QT_CONFIG(accessibility)
+        self.icon_lbl.setAccessibleDescription(QCoreApplication.translate(
+            "splash_screen", u"<html><head/><body><p>a tiny, lined and dark eye icon resembling shining sun.</p></body></html>", None))
+#endif // QT_CONFIG(accessibility)
         self.icon_lbl.setText("")
+# if QT_CONFIG(accessibility)
+        self.welcome_lbl.setAccessibleName(QCoreApplication.translate(
+            "splash_screen", u"<html><head/><body><p>Salutation text</p></body></html>", None))
+#endif // QT_CONFIG(accessibility)
+# if QT_CONFIG(accessibility)
+        self.welcome_lbl.setAccessibleDescription(QCoreApplication.translate(
+            "splash_screen", u"<html><head/><body><p>A salutation message.</p></body></html>", None))
+#endif // QT_CONFIG(accessibility)
         self.welcome_lbl.setText(QCoreApplication.translate(
             "splash_screen", u"Welcome To Ruith", None))
         self.label.setText(QCoreApplication.translate("splash_screen", u"Please wait while dependencies are being installed...\n"
                                                       "[This will happen only once]", None))
+# if QT_CONFIG(accessibility)
+        self.progress_bar.setAccessibleName(QCoreApplication.translate(
+            "splash_screen", u"<html><head/><body><p>Dependency installation progress bar</p></body></html>", None))
+#endif // QT_CONFIG(accessibility)
+# if QT_CONFIG(accessibility)
+        self.progress_bar.setAccessibleDescription(QCoreApplication.translate(
+            "splash_screen", u"<html><head/><body><p>A progress bar showing the progress of dependency installation.</p></body></html>", None))
+#endif // QT_CONFIG(accessibility)
     # retranslateUi

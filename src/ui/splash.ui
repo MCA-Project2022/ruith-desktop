@@ -43,6 +43,12 @@ background-color:#e4edef;
            <height>15</height>
           </size>
          </property>
+         <property name="accessibleName">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;an eye icon&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="accessibleDescription">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;a tiny, lined and dark eye icon resembling shining sun.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
          <property name="styleSheet">
           <string notr="true">QLabel{
 color:#2a484c;
@@ -80,6 +86,12 @@ color:#2a484c;
          <bold>true</bold>
         </font>
        </property>
+       <property name="accessibleName">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Salutation text&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="accessibleDescription">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A salutation message.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
 	font-size:30pt;
@@ -98,6 +110,12 @@ color:#2a484c;
      </item>
      <item>
       <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
 color:#633936;
@@ -128,6 +146,12 @@ font-style:italic;
            <width>500</width>
            <height>16777215</height>
           </size>
+         </property>
+         <property name="accessibleName">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Dependency installation progress bar&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="accessibleDescription">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A progress bar showing the progress of dependency installation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="styleSheet">
           <string notr="true">QProgressBar{
