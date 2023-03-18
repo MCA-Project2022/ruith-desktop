@@ -57,7 +57,7 @@ class RootWidget(QWidget, Ui_root_widget):
 
     def show_failure_msg(self):
         self.loading_widget.hide()
-        QMessageBox.information(
+        QMessageBox.critical(
             self, 'Failure', 'Something went wrong please try again.')
 
     def convert_btn_clicked_slot(self):
