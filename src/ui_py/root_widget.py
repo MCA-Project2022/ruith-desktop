@@ -8,11 +8,11 @@ from ui_py.loading_widget import LoadingWidget
 
 class RootWidget(QWidget, Ui_root_widget):
     doc_converter: DocumentConverter = DocumentConverter()
-    
+
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.loading_widget=LoadingWidget()
+        self.loading_widget = LoadingWidget()
         self.setup_slots()
 
     def setup_slots(self):
@@ -44,7 +44,7 @@ class RootWidget(QWidget, Ui_root_widget):
         self.input_doc_lbl.setText(Path(self.doc_converter.input).name)
 
     def set_output_file(self):
-        self.doc_converter.output,_ = QFileDialog.getSaveFileName(
+        self.doc_converter.output, _ = QFileDialog.getSaveFileName(
             self, "Select One Input Document", str(Path.home()),
             f"Document ( *.{self.doc_converter.output_format.value})"
         )
@@ -58,7 +58,8 @@ class RootWidget(QWidget, Ui_root_widget):
     def show_failure_msg(self):
         self.loading_widget.hide()
         QMessageBox.information(
-            self, 'Success', 'Something went wrong please try again.')
+            self, 'Failure', 'Something went wrong please try again.')
+
     def convert_btn_clicked_slot(self):
         self.loading_widget.show()
         self.doc_converter.start()
