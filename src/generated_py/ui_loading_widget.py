@@ -56,10 +56,10 @@ class Ui_loading_widget(object):
         self.label.setText(QCoreApplication.translate("loading_widget", u"Converting Your document.\n"
 "Please Wait...", None))
 #if QT_CONFIG(accessibility)
-        self.progressBar.setAccessibleName(QCoreApplication.translate("loading_widget", u"<html><head/><body><p>Indeterminate progressbar</p></body></html>", None))
+        self.progressBar.setAccessibleName(QCoreApplication.translate("loading_widget", u"Indeterminate progressbar", None))
 #endif // QT_CONFIG(accessibility)
 #if QT_CONFIG(accessibility)
-        self.progressBar.setAccessibleDescription(QCoreApplication.translate("loading_widget", u"<html><head/><body><p>Indeterminate progressbar signifiging the running process(document conversion)</p></body></html>", None))
+        self.progressBar.setAccessibleDescription(QCoreApplication.translate("loading_widget", u"Indeterminate progressbar signifiging the running process(document conversion)", None))
 #endif // QT_CONFIG(accessibility)
     # retranslateUi
 

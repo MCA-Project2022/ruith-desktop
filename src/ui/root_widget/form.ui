@@ -20,10 +20,10 @@
    <item>
     <widget class="QGroupBox" name="input_doc_sec">
      <property name="accessibleName">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input Document's Widget Section&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>Input Document's Widget Section</string>
      </property>
      <property name="accessibleDescription">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input Document's widget contains all the widgets that's used to set the input document.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>Input Document's widget contains all the widgets that's used to set the input document.</string>
      </property>
      <property name="styleSheet">
       <string notr="true"/>
@@ -44,10 +44,10 @@
         <item>
          <widget class="QComboBox" name="input_doc_format_cb">
           <property name="accessibleName">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input Document Format Dropdown List.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>Input Document Format Dropdown List.</string>
           </property>
           <property name="accessibleDescription">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This dropdown list can be used to select the format of the input document. Key shortcut is 'Ctrl+i'.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>This dropdown list can be used to select the format of the input document. Key shortcut is 'Ctrl+i'.</string>
           </property>
           <item>
            <property name="text">
@@ -75,10 +75,10 @@
         <item>
          <widget class="QPushButton" name="input_doc_browse_btn">
           <property name="accessibleName">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input Document selector button.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>Input Document selector button.</string>
           </property>
           <property name="accessibleDescription">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This button can be used to open the file explorer and select the input document of the format selected in the drop down list. Key shortcut is 'i'.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>This button can be used to open the file explorer and select the input document of the format selected in the drop down list. Key shortcut is 'i'.</string>
           </property>
           <property name="text">
            <string>Browse...</string>
@@ -100,10 +100,10 @@
    <item>
     <widget class="QGroupBox" name="output_doc_sec">
      <property name="accessibleName">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Output Document's Widget Section&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>Output Document's Widget Section</string>
      </property>
      <property name="accessibleDescription">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Output Document's widget contains all the widgets that's used to set the output document.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>Output Document's widget contains all the widgets that's used to set the output document.</string>
      </property>
      <property name="styleSheet">
       <string notr="true"/>
@@ -124,10 +124,10 @@
         <item>
          <widget class="QComboBox" name="output_doc_format_cb">
           <property name="accessibleName">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Output Document Format Dropdown List.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>Output Document Format Dropdown List.</string>
           </property>
           <property name="accessibleDescription">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This dropdown list can be used to select the format of the output document. Key shortcut is 'Ctrl+o'.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>This dropdown list can be used to select the format of the output document. Key shortcut is 'Ctrl+o'.</string>
           </property>
           <property name="currentIndex">
            <number>1</number>
@@ -158,10 +158,10 @@
         <item>
          <widget class="QPushButton" name="output_doc_browse_btn">
           <property name="accessibleName">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Output Document setter button.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>Output Document setter button.</string>
           </property>
           <property name="accessibleDescription">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This button can be used to open the file explorer and set the output document of the format selected in the drop down list. The user'll have to navigate to the desired location and give a name for the resulting document. Key shortcut is 'o'.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>This button can be used to open the file explorer and set the output document of the format selected in the drop down list. The user'll have to navigate to the desired location and give a name for the resulting document. Key shortcut is 'o'.</string>
           </property>
           <property name="text">
            <string>Browse...</string>
@@ -183,10 +183,10 @@
    <item>
     <widget class="QPushButton" name="convert_btn">
      <property name="accessibleName">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Convert button&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>Convert button</string>
      </property>
      <property name="accessibleDescription">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Clicking this button will start converting the selected document and create the output document specified by the user. Key shortcut is 'c'.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>Clicking this button will start converting the selected document and create the output document specified by the user. Key shortcut is 'c'.</string>
      </property>
      <property name="styleSheet">
       <string notr="true"/>

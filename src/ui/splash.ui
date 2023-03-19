@@ -44,10 +44,10 @@ background-color:#e4edef;
           </size>
          </property>
          <property name="accessibleName">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;an eye icon&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>an eye icon</string>
          </property>
          <property name="accessibleDescription">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;a tiny, lined and dark eye icon resembling shining sun.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>a tiny, lined and dark eye icon resembling shining sun.</string>
          </property>
          <property name="styleSheet">
           <string notr="true">QLabel{
@@ -87,10 +87,10 @@ color:#2a484c;
         </font>
        </property>
        <property name="accessibleName">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Salutation text&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>Salutation text</string>
        </property>
        <property name="accessibleDescription">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A salutation message.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>A salutation message.</string>
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
@@ -148,10 +148,10 @@ font-style:italic;
           </size>
          </property>
          <property name="accessibleName">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Dependency installation progress bar&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>Dependency installation progress bar</string>
          </property>
          <property name="accessibleDescription">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A progress bar showing the progress of dependency installation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>A progress bar showing the progress of dependency installation.</string>
          </property>
          <property name="styleSheet">
           <string notr="true">QProgressBar{

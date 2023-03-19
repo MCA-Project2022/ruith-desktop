@@ -127,20 +127,20 @@ class Ui_splash_screen(object):
             QCoreApplication.translate("splash_screen", u"Form", None))
 # if QT_CONFIG(accessibility)
         self.icon_lbl.setAccessibleName(QCoreApplication.translate(
-            "splash_screen", u"<html><head/><body><p>an eye icon</p></body></html>", None))
+            "splash_screen", u"an eye icon", None))
 #endif // QT_CONFIG(accessibility)
 # if QT_CONFIG(accessibility)
         self.icon_lbl.setAccessibleDescription(QCoreApplication.translate(
-            "splash_screen", u"<html><head/><body><p>a tiny, lined and dark eye icon resembling shining sun.</p></body></html>", None))
+            "splash_screen", u"a tiny, lined and dark eye icon resembling shining sun.", None))
 #endif // QT_CONFIG(accessibility)
         self.icon_lbl.setText("")
 # if QT_CONFIG(accessibility)
         self.welcome_lbl.setAccessibleName(QCoreApplication.translate(
-            "splash_screen", u"<html><head/><body><p>Salutation text</p></body></html>", None))
+            "splash_screen", u"Salutation text", None))
 #endif // QT_CONFIG(accessibility)
 # if QT_CONFIG(accessibility)
         self.welcome_lbl.setAccessibleDescription(QCoreApplication.translate(
-            "splash_screen", u"<html><head/><body><p>A salutation message.</p></body></html>", None))
+            "splash_screen", u"A salutation message.", None))
 #endif // QT_CONFIG(accessibility)
         self.welcome_lbl.setText(QCoreApplication.translate(
             "splash_screen", u"Welcome To Ruith", None))
@@ -148,10 +148,10 @@ class Ui_splash_screen(object):
                                                       "[This will happen only once]", None))
 # if QT_CONFIG(accessibility)
         self.progress_bar.setAccessibleName(QCoreApplication.translate(
-            "splash_screen", u"<html><head/><body><p>Dependency installation progress bar</p></body></html>", None))
+            "splash_screen", u"Dependency installation progress bar", None))
 #endif // QT_CONFIG(accessibility)
 # if QT_CONFIG(accessibility)
         self.progress_bar.setAccessibleDescription(QCoreApplication.translate(
-            "splash_screen", u"<html><head/><body><p>A progress bar showing the progress of dependency installation.</p></body></html>", None))
+            "splash_screen", u"A progress bar showing the progress of dependency installation.", None))
 #endif // QT_CONFIG(accessibility)
     # retranslateUi

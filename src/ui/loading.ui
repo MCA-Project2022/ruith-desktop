@@ -30,10 +30,10 @@ Please Wait...</string>
      <item>
       <widget class="QProgressBar" name="progressBar">
        <property name="accessibleName">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Indeterminate progressbar&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>Indeterminate progressbar</string>
        </property>
        <property name="accessibleDescription">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Indeterminate progressbar signifiging the running process(document conversion)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>Indeterminate progressbar signifiging the running process(document conversion)</string>
        </property>
        <property name="maximum">
         <number>0</number>
