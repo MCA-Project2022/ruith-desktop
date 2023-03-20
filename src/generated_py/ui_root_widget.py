@@ -42,6 +42,10 @@ class Ui_root_widget(object):
         self.input_doc_format_cb = QComboBox(self.input_doc_sec)
         self.input_doc_format_cb.addItem("")
         self.input_doc_format_cb.addItem("")
+        self.input_doc_format_cb.addItem("")
+        self.input_doc_format_cb.addItem("")
+        self.input_doc_format_cb.addItem("")
+        self.input_doc_format_cb.addItem("")
         self.input_doc_format_cb.setObjectName(u"input_doc_format_cb")
 
         self.horizontalLayout.addWidget(self.input_doc_format_cb)
@@ -87,6 +91,10 @@ class Ui_root_widget(object):
         self.output_doc_format_cb = QComboBox(self.output_doc_sec)
         self.output_doc_format_cb.addItem("")
         self.output_doc_format_cb.addItem("")
+        self.output_doc_format_cb.addItem("")
+        self.output_doc_format_cb.addItem("")
+        self.output_doc_format_cb.addItem("")
+        self.output_doc_format_cb.addItem("")
         self.output_doc_format_cb.setObjectName(u"output_doc_format_cb")
 
         self.horizontalLayout_3.addWidget(self.output_doc_format_cb)
@@ -126,7 +134,7 @@ class Ui_root_widget(object):
 
         self.retranslateUi(root_widget)
 
-        self.output_doc_format_cb.setCurrentIndex(1)
+        self.output_doc_format_cb.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(root_widget)
@@ -144,6 +152,10 @@ class Ui_root_widget(object):
         self.input_format_lbl.setText(QCoreApplication.translate("root_widget", u"Format", None))
         self.input_doc_format_cb.setItemText(0, QCoreApplication.translate("root_widget", u"Microsoft Word(docx)", None))
         self.input_doc_format_cb.setItemText(1, QCoreApplication.translate("root_widget", u"Electronic Publication(epub)", None))
+        self.input_doc_format_cb.setItemText(2, QCoreApplication.translate("root_widget", u"OpenOffice/LibreOffice(odt)", None))
+        self.input_doc_format_cb.setItemText(3, QCoreApplication.translate("root_widget", u"Markdown(md)", None))
+        self.input_doc_format_cb.setItemText(4, QCoreApplication.translate("root_widget", u"Rich Text Format(rtf)", None))
+        self.input_doc_format_cb.setItemText(5, QCoreApplication.translate("root_widget", u"HTML(html)", None))
 
 #if QT_CONFIG(accessibility)
         self.input_doc_format_cb.setAccessibleName(QCoreApplication.translate("root_widget", u"Input Document Format Dropdown List.", None))
@@ -170,6 +182,10 @@ class Ui_root_widget(object):
         self.output_format_lbl.setText(QCoreApplication.translate("root_widget", u"Format", None))
         self.output_doc_format_cb.setItemText(0, QCoreApplication.translate("root_widget", u"Microsoft Word(docx)", None))
         self.output_doc_format_cb.setItemText(1, QCoreApplication.translate("root_widget", u"Electronic Publication(epub)", None))
+        self.output_doc_format_cb.setItemText(2, QCoreApplication.translate("root_widget", u"OpenOffice/LibreOffice(odt)", None))
+        self.output_doc_format_cb.setItemText(3, QCoreApplication.translate("root_widget", u"Markdown(md)", None))
+        self.output_doc_format_cb.setItemText(4, QCoreApplication.translate("root_widget", u"Rich Text Format(rtf)", None))
+        self.output_doc_format_cb.setItemText(5, QCoreApplication.translate("root_widget", u"HTML(html)", None))
 
 #if QT_CONFIG(accessibility)
         self.output_doc_format_cb.setAccessibleName(QCoreApplication.translate("root_widget", u"Output Document Format Dropdown List.", None))

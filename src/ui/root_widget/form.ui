@@ -59,6 +59,26 @@
             <string>Electronic Publication(epub)</string>
            </property>
           </item>
+          <item>
+           <property name="text">
+            <string>OpenOffice/LibreOffice(odt)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Markdown(md)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rich Text Format(rtf)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HTML(html)</string>
+           </property>
+          </item>
          </widget>
         </item>
        </layout>
@@ -130,7 +150,7 @@
            <string>This dropdown list can be used to select the format of the output document. Key shortcut is 'Ctrl+o'.</string>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <item>
            <property name="text">
@@ -140,6 +160,26 @@
           <item>
            <property name="text">
             <string>Electronic Publication(epub)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>OpenOffice/LibreOffice(odt)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Markdown(md)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rich Text Format(rtf)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HTML(html)</string>
            </property>
           </item>
          </widget>
