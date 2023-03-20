@@ -5,6 +5,8 @@ from utilities.document_converter import DocumentConverter
 from utilities.document_format import DocumentFormat
 from pathlib import Path
 from ui_py.loading_widget import LoadingWidget
+from ui_py.epub_viewer import EPubViewer
+from ui_py.conversion_result_widget import ConversionResultWidget
 
 
 class RootWidget(QWidget, Ui_root_widget):
@@ -66,11 +68,15 @@ class RootWidget(QWidget, Ui_root_widget):
 
     def show_success_msg(self):
         self.loading_widget.hide()
-        QMessageBox.information(
-            self, 'Success',
+        self.conversion_result_widget = ConversionResultWidget(
+            self.doc_converter.output_format,
+            self.doc_converter.output
+        )
+        self.conversion_result_widget.message_lbl.setText(
             f'''Document was successfully converted from {
                 self.doc_converter.input_format.value} to {
                     self.doc_converter.output_format.value}''')
+        self.conversion_result_widget.show()
 
     def show_failure_msg(self):
         self.loading_widget.hide()

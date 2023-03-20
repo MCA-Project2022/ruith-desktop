@@ -4,6 +4,7 @@
     "ui/root_widget/form.ui","ui_py/app.py","resources/resource.qrc","resources/assets/images/eye.png","ui/splash.ui",
     "ui/loading.ui","generated_py/resource_rc.py","generated_py/ui_loading_widget.py","generated_py/ui_splash.py",
     "etc/pandoc_helper.py","resources/assets/styles/dark.qss","resources/assets/styles/light.qss","ui_py/loading_widget.py",
-    "ui_py/splash.py","utilities/document_converter.py","utilities/document_format.py","utilities/downloader.py"
+    "ui_py/splash.py","utilities/document_converter.py","utilities/document_format.py","utilities/downloader.py",
+    "ui/epub_viewer.ui"
     ]
 }
