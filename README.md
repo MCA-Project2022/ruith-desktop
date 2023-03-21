@@ -1,2 +1,2 @@
 # ruith-desktop
-A user friendly document converter(docx to epub) that has rich accessibility.
+A cross-platform and user friendly GUI document converter for that provides rich accessibility.
